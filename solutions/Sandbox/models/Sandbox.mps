@@ -20,6 +20,7 @@
         <child id="829721821152283215" name="schaltzeitpunkte" index="2BFWBm" />
       </concept>
       <concept id="7017072067713271490" name="wpLanguage.structure.Heizungsaktor" flags="ng" index="1Qf2cs">
+        <child id="7258793484080633037" name="tageszeitprogramme" index="1CdVVU" />
         <child id="7017072067713271491" name="kanaele" index="1Qf2ct" />
       </concept>
       <concept id="7017072067713224812" name="wpLanguage.structure.Raumtemperaturregler" flags="ng" index="1QfnmM">
@@ -28,50 +29,74 @@
       </concept>
     </language>
   </registry>
-  <node concept="1Qf2cs" id="6iWqzscxosq">
-    <property role="TrG5h" value="MDT31" />
-    <node concept="1QfnmM" id="6iWqzscxosr" role="1Qf2ct">
+  <node concept="1Qf2cs" id="6iWqzscz4ui">
+    <property role="TrG5h" value="MDT 3.1" />
+    <node concept="2BFWBl" id="6iWqzscz9nN" role="1CdVVU">
+      <property role="TrG5h" value="Standard Komfortprogramm" />
+      <node concept="2BElMD" id="6iWqzscz9nP" role="2BFWBm">
+        <property role="2BZOan" value="06:30" />
+        <property role="2BFWox" value="1" />
+      </node>
+      <node concept="2BElMD" id="6iWqzsczb0A" role="2BFWBm">
+        <property role="2BZOan" value="10:00" />
+        <property role="2BFWox" value="2" />
+      </node>
+      <node concept="2BElMD" id="6iWqzsczb0D" role="2BFWBm">
+        <property role="2BZOan" value="15:30" />
+        <property role="2BFWox" value="1" />
+      </node>
+      <node concept="2BElMD" id="6iWqzsczb0H" role="2BFWBm">
+        <property role="2BZOan" value="21:30" />
+        <property role="2BFWox" value="3" />
+      </node>
+    </node>
+    <node concept="2BFWBl" id="6iWqzsczb0y" role="1CdVVU">
+      <property role="TrG5h" value="Wochenendprogramm" />
+      <node concept="2BElMD" id="6iWqzsczb0U" role="2BFWBm">
+        <property role="2BZOan" value="09:30" />
+        <property role="2BFWox" value="1" />
+      </node>
+      <node concept="2BElMD" id="6iWqzsczb0W" role="2BFWBm">
+        <property role="2BZOan" value="13:00" />
+        <property role="2BFWox" value="2" />
+      </node>
+      <node concept="2BElMD" id="6iWqzsczb0Z" role="2BFWBm">
+        <property role="2BZOan" value="15:00" />
+        <property role="2BFWox" value="1" />
+      </node>
+      <node concept="2BElMD" id="6iWqzsczb13" role="2BFWBm">
+        <property role="2BZOan" value="23:30" />
+        <property role="2BFWox" value="3" />
+      </node>
+    </node>
+    <node concept="2BFWBl" id="6iWqzsczb0M" role="1CdVVU">
+      <property role="TrG5h" value="Standard Badezimmerprogramm" />
+      <node concept="2BElMD" id="6iWqzsczb18" role="2BFWBm">
+        <property role="2BZOan" value="05:30" />
+        <property role="2BFWox" value="1" />
+      </node>
+      <node concept="2BElMD" id="6iWqzsczb2E" role="2BFWBm">
+        <property role="2BZOan" value="08:00" />
+        <property role="2BFWox" value="3" />
+      </node>
+      <node concept="2BElMD" id="6iWqzsczb3_" role="2BFWBm">
+        <property role="2BZOan" value="19:30" />
+        <property role="2BFWox" value="1" />
+      </node>
+      <node concept="2BElMD" id="6iWqzsczb3D" role="2BFWBm">
+        <property role="2BZOan" value="21:30" />
+        <property role="2BFWox" value="3" />
+      </node>
+    </node>
+    <node concept="1QfnmM" id="6iWqzscz4uj" role="1Qf2ct">
       <property role="PCpTU" value="21,5" />
-      <property role="TrG5h" value="A" />
-      <ref role="2BFW_m" node="6iWqzscxoss" resolve="StandardKomfortProgramm" />
+      <property role="TrG5h" value="Wohnzimmer" />
+      <ref role="2BFW_m" node="6iWqzscz9nN" resolve="Standard Komfortprogramm" />
     </node>
-  </node>
-  <node concept="2BFWBl" id="6iWqzscxoss">
-    <property role="TrG5h" value="StandardKomfortProgramm" />
-    <node concept="2BElMD" id="6iWqzscxost" role="2BFWBm">
-      <property role="2BZOan" value="06:30" />
-      <property role="2BFWox" value="1" />
-    </node>
-    <node concept="2BElMD" id="6iWqzscxosv" role="2BFWBm">
-      <property role="2BZOan" value="10:30" />
-      <property role="2BFWox" value="3" />
-    </node>
-    <node concept="2BElMD" id="6iWqzscxosy" role="2BFWBm">
-      <property role="2BZOan" value="16:30" />
-      <property role="2BFWox" value="2" />
-    </node>
-    <node concept="2BElMD" id="6iWqzscxosI" role="2BFWBm">
-      <property role="2BZOan" value="21:30" />
-      <property role="2BFWox" value="3" />
-    </node>
-  </node>
-  <node concept="2BFWBl" id="6iWqzscxy0h">
-    <property role="TrG5h" value="WochenendProgramm" />
-    <node concept="2BElMD" id="6iWqzscxy0q" role="2BFWBm">
-      <property role="2BZOan" value="09:30" />
-      <property role="2BFWox" value="1" />
-    </node>
-    <node concept="2BElMD" id="6iWqzscxy0s" role="2BFWBm">
-      <property role="2BZOan" value="12:30" />
-      <property role="2BFWox" value="2" />
-    </node>
-    <node concept="2BElMD" id="6iWqzscxy0v" role="2BFWBm">
-      <property role="2BZOan" value="15:00" />
-      <property role="2BFWox" value="1" />
-    </node>
-    <node concept="2BElMD" id="6iWqzscxy0z" role="2BFWBm">
-      <property role="2BZOan" value="23:00" />
-      <property role="2BFWox" value="3" />
+    <node concept="1QfnmM" id="6iWqzsc$nKC" role="1Qf2ct">
+      <property role="TrG5h" value="Badezimmer" />
+      <property role="PCpTU" value="22,0" />
+      <ref role="2BFW_m" node="6iWqzsczb0M" resolve="Standard Badezimmerprogramm" />
     </node>
   </node>
 </model>
