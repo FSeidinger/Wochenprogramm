@@ -25,6 +25,7 @@
       </concept>
       <concept id="7017072067713224812" name="wpLanguage.structure.Raumtemperaturregler" flags="ng" index="1QfnmM">
         <property id="625434474402571053" name="komfortemperatur" index="PCpTU" />
+        <property id="7967611634892698968" name="itemname" index="SBH79" />
         <reference id="829721821152283343" name="tageszeitprogramm" index="2BFW_m" />
       </concept>
     </language>
@@ -48,6 +49,10 @@
       <node concept="2BElMD" id="6iWqzsczb0H" role="2BFWBm">
         <property role="2BZOan" value="21:30" />
         <property role="2BFWox" value="3" />
+      </node>
+      <node concept="2BElMD" id="6UiD95lXoGe" role="2BFWBm">
+        <property role="2BZOan" value="23:00" />
+        <property role="2BFWox" value="1" />
       </node>
     </node>
     <node concept="2BFWBl" id="6iWqzsczb0y" role="1CdVVU">
@@ -88,15 +93,34 @@
         <property role="2BFWox" value="3" />
       </node>
     </node>
+    <node concept="2BFWBl" id="6UiD95lXoIm" role="1CdVVU">
+      <property role="TrG5h" value="Meine neues Programm" />
+      <node concept="2BElMD" id="6UiD95lXu7I" role="2BFWBm">
+        <property role="2BZOan" value="05:30" />
+        <property role="2BFWox" value="3" />
+      </node>
+      <node concept="2BElMD" id="6UiD95lXu7K" role="2BFWBm">
+        <property role="2BZOan" value="06:30" />
+        <property role="2BFWox" value="1" />
+      </node>
+    </node>
     <node concept="1QfnmM" id="6iWqzscz4uj" role="1Qf2ct">
       <property role="PCpTU" value="21,5" />
       <property role="TrG5h" value="Wohnzimmer" />
+      <property role="SBH79" value="KNX.Adresse.Raeume.Wohnzimmer.Temperatur.Betriebsart" />
       <ref role="2BFW_m" node="6iWqzscz9nN" resolve="Standard Komfortprogramm" />
     </node>
     <node concept="1QfnmM" id="6iWqzsc$nKC" role="1Qf2ct">
       <property role="TrG5h" value="Badezimmer" />
       <property role="PCpTU" value="22,0" />
+      <property role="SBH79" value="KNX.Adresse.Raeume.Badezimmer.Temperatur.Betriebsart" />
       <ref role="2BFW_m" node="6iWqzsczb0M" resolve="Standard Badezimmerprogramm" />
+    </node>
+    <node concept="1QfnmM" id="6UiD95lXu7N" role="1Qf2ct">
+      <property role="TrG5h" value="Kinderzimmer" />
+      <property role="PCpTU" value="23,5" />
+      <property role="SBH79" value="KNX.Adresse.Raeume.Kinderzimmer.Temperatur.Betriebsart" />
+      <ref role="2BFW_m" node="6UiD95lXoIm" resolve="Meine neues Programm" />
     </node>
   </node>
 </model>

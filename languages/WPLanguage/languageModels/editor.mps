@@ -28,6 +28,12 @@
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
+      <concept id="5944657839000868711" name="jetbrains.mps.lang.editor.structure.ConceptEditorContextHints" flags="ig" index="2ABfQD">
+        <child id="5944657839000877563" name="hints" index="2ABdcP" />
+      </concept>
+      <concept id="5944657839003601246" name="jetbrains.mps.lang.editor.structure.ConceptEditorHintDeclaration" flags="ig" index="2BsEeg">
+        <property id="168363875802087287" name="showInUI" index="2gpH_U" />
+      </concept>
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
@@ -62,6 +68,11 @@
       <concept id="1198256887712" name="jetbrains.mps.lang.editor.structure.CellModel_Indent" flags="ng" index="3XFhqQ" />
       <concept id="1166049232041" name="jetbrains.mps.lang.editor.structure.AbstractComponent" flags="ng" index="1XWOmA">
         <reference id="1166049300910" name="conceptDeclaration" index="1XX52x" />
+      </concept>
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
   </registry>
@@ -224,6 +235,19 @@
           </node>
         </node>
       </node>
+      <node concept="3EZMnI" id="6UiD95m3eeL" role="3EZMnx">
+        <node concept="VPM3Z" id="6UiD95m3eeN" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="3XFhqQ" id="6UiD95m3eg0" role="3EZMnx" />
+        <node concept="3F0ifn" id="6UiD95m3eeP" role="3EZMnx">
+          <property role="3F0ifm" value="Itemname: " />
+        </node>
+        <node concept="2iRfu4" id="6UiD95m3eeQ" role="2iSdaV" />
+        <node concept="3F0A7n" id="6UiD95m3egi" role="3EZMnx">
+          <ref role="1NtTu8" to="la9r:6UiD95m37lo" resolve="itemname" />
+        </node>
+      </node>
       <node concept="3EZMnI" id="6iWqzscyCbb" role="3EZMnx">
         <node concept="2iRfu4" id="6iWqzscyCbc" role="2iSdaV" />
         <node concept="3XFhqQ" id="6iWqzsc$lyA" role="3EZMnx" />
@@ -238,6 +262,13 @@
         </node>
       </node>
       <node concept="3F0ifn" id="6iWqzsc$nKM" role="3EZMnx" />
+    </node>
+  </node>
+  <node concept="2ABfQD" id="1pCydmCrKIG">
+    <property role="TrG5h" value="openhab" />
+    <node concept="2BsEeg" id="1pCydmCrKIL" role="2ABdcP">
+      <property role="2gpH_U" value="true" />
+      <property role="TrG5h" value="openhab" />
     </node>
   </node>
 </model>

@@ -20,6 +20,7 @@
         <property id="1083066089218" name="constraint" index="FLfZY" />
       </concept>
       <concept id="1083171877298" name="jetbrains.mps.lang.structure.structure.EnumerationMemberDeclaration" flags="ig" index="M4N5e">
+        <property id="1192116978809" name="javaIdentifier" index="2fHolG" />
         <property id="1083923523172" name="externalValue" index="1uS6qo" />
         <property id="1083923523171" name="internalValue" index="1uS6qv" />
       </concept>
@@ -58,6 +59,10 @@
     <property role="R4oN_" value="Definiert einen Raumtemepraturregler" />
     <property role="34LRSv" value="Regler" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="6UiD95m37lo" role="1TKVEl">
+      <property role="TrG5h" value="itemname" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
     <node concept="1TJgyj" id="I3KTAGb0Ff" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="tageszeitprogramm" />
@@ -96,23 +101,27 @@
   <node concept="AxPO7" id="65xDtSnnpYu">
     <property role="TrG5h" value="Betriebsart" />
     <property role="PDuV0" value="true" />
-    <property role="3lZH7k" value="derive_from_internal_value" />
+    <property role="3lZH7k" value="custom" />
     <ref role="M4eZT" to="tpck:fKAQMTA" resolve="integer" />
     <node concept="M4N5e" id="65xDtSnnpYv" role="M5hS2">
-      <property role="1uS6qv" value="0x01" />
+      <property role="1uS6qv" value="1" />
       <property role="1uS6qo" value="Comfort" />
+      <property role="2fHolG" value="Comfort" />
     </node>
     <node concept="M4N5e" id="65xDtSnnpYS" role="M5hS2">
-      <property role="1uS6qv" value="0x02" />
+      <property role="1uS6qv" value="2" />
       <property role="1uS6qo" value="Standby" />
+      <property role="2fHolG" value="Standby" />
     </node>
     <node concept="M4N5e" id="65xDtSnnpYV" role="M5hS2">
-      <property role="1uS6qv" value="0x03" />
+      <property role="1uS6qv" value="3" />
       <property role="1uS6qo" value="Economy" />
+      <property role="2fHolG" value="Economy" />
     </node>
     <node concept="M4N5e" id="65xDtSnnpZf" role="M5hS2">
-      <property role="1uS6qv" value="0x04" />
+      <property role="1uS6qv" value="4" />
       <property role="1uS6qo" value="Protection" />
+      <property role="2fHolG" value="Protection" />
     </node>
   </node>
   <node concept="1TIwiD" id="I3KTAGaDWK">
