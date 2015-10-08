@@ -31,7 +31,7 @@
     </language>
   </registry>
   <node concept="1Qf2cs" id="6iWqzscz4ui">
-    <property role="TrG5h" value="MDT 3.1" />
+    <property role="TrG5h" value="mdt" />
     <node concept="2BFWBl" id="6iWqzscz9nN" role="1CdVVU">
       <property role="TrG5h" value="Standard Komfortprogramm" />
       <node concept="2BElMD" id="6iWqzscz9nP" role="2BFWBm">
@@ -53,6 +53,10 @@
       <node concept="2BElMD" id="6UiD95lXoGe" role="2BFWBm">
         <property role="2BZOan" value="23:00" />
         <property role="2BFWox" value="1" />
+      </node>
+      <node concept="2BElMD" id="5fdNv3r2sEi" role="2BFWBm">
+        <property role="2BZOan" value="23:59" />
+        <property role="2BFWox" value="3" />
       </node>
     </node>
     <node concept="2BFWBl" id="6iWqzsczb0y" role="1CdVVU">
@@ -93,34 +97,23 @@
         <property role="2BFWox" value="3" />
       </node>
     </node>
-    <node concept="2BFWBl" id="6UiD95lXoIm" role="1CdVVU">
-      <property role="TrG5h" value="Meine neues Programm" />
-      <node concept="2BElMD" id="6UiD95lXu7I" role="2BFWBm">
-        <property role="2BZOan" value="05:30" />
-        <property role="2BFWox" value="3" />
-      </node>
-      <node concept="2BElMD" id="6UiD95lXu7K" role="2BFWBm">
-        <property role="2BZOan" value="06:30" />
-        <property role="2BFWox" value="1" />
-      </node>
-    </node>
     <node concept="1QfnmM" id="6iWqzscz4uj" role="1Qf2ct">
       <property role="PCpTU" value="21,5" />
       <property role="TrG5h" value="Wohnzimmer" />
-      <property role="SBH79" value="KNX.Adresse.Raeume.Wohnzimmer.Temperatur.Betriebsart" />
+      <property role="SBH79" value="KNX_Adresse_Raeume_Wohnzimmer_Temperatur_Betriebsart" />
       <ref role="2BFW_m" node="6iWqzscz9nN" resolve="Standard Komfortprogramm" />
     </node>
     <node concept="1QfnmM" id="6iWqzsc$nKC" role="1Qf2ct">
       <property role="TrG5h" value="Badezimmer" />
       <property role="PCpTU" value="22,0" />
-      <property role="SBH79" value="KNX.Adresse.Raeume.Badezimmer.Temperatur.Betriebsart" />
+      <property role="SBH79" value="KNX_Adresse_Raeume_Badezimmer_Temperatur_Betriebsart" />
       <ref role="2BFW_m" node="6iWqzsczb0M" resolve="Standard Badezimmerprogramm" />
     </node>
     <node concept="1QfnmM" id="6UiD95lXu7N" role="1Qf2ct">
       <property role="TrG5h" value="Kinderzimmer" />
       <property role="PCpTU" value="23,5" />
-      <property role="SBH79" value="KNX.Adresse.Raeume.Kinderzimmer.Temperatur.Betriebsart" />
-      <ref role="2BFW_m" node="6UiD95lXoIm" resolve="Meine neues Programm" />
+      <property role="SBH79" value="KNX_Adresse_Raeume_Kinderzimmer_Temperatur_Betriebsart" />
+      <ref role="2BFW_m" node="6iWqzscz9nN" resolve="Standard Komfortprogramm" />
     </node>
   </node>
 </model>
