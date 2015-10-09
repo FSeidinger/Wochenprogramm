@@ -46,6 +46,10 @@
         <property role="2BZOan" value="15:30" />
         <property role="2BFWox" value="1" />
       </node>
+      <node concept="2BElMD" id="4bVE86q3vqq" role="2BFWBm">
+        <property role="2BZOan" value="16:30" />
+        <property role="2BFWox" value="2" />
+      </node>
       <node concept="2BElMD" id="6iWqzsczb0H" role="2BFWBm">
         <property role="2BZOan" value="21:30" />
         <property role="2BFWox" value="3" />
@@ -95,6 +99,13 @@
       <node concept="2BElMD" id="6iWqzsczb3D" role="2BFWBm">
         <property role="2BZOan" value="21:30" />
         <property role="2BFWox" value="3" />
+      </node>
+    </node>
+    <node concept="2BFWBl" id="4bVE86q3$Cs" role="1CdVVU">
+      <property role="TrG5h" value="Mein neues Tageszeitprogramm" />
+      <node concept="2BElMD" id="4bVE86q3$Se" role="2BFWBm">
+        <property role="2BZOan" value="05:30" />
+        <property role="2BFWox" value="4" />
       </node>
     </node>
     <node concept="1QfnmM" id="6iWqzscz4uj" role="1Qf2ct">
